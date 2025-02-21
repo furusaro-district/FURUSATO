@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+/// magugulat ako pag kinopya ng ibaSS
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>FURUSATO DISTRICT</title> 
+    <style>
+        /* Styling for the YouTube background video */
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        /* Ensuring the video doesn't overlap with other content */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .nav-container {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Other styles */
+        /* You can adjust your styles for content here */
+    </style>
+    
+</head>
+<body>
+    <div class="video-background">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/RUB5KmZrVDs?autoplay=1&mute=1&controls=0&loop=1&playlist=RUB5KmZrVDs" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                FURUSATO <span>DISTRICT</span>
+            </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+    </div>
+    </nav>
+    <section>
+        <div class="main-container">
+            <div class="image" data-aos="zoom-out" data-aos-duration="3000">
+                <img src="https://github.com/ANDREIMERCY/furosatogif/blob/main/FD-ROTATING-ezgif.com-resize.gif?raw=true" alt="">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">FURUSATO <span>DISTRICT</span></h1>
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">OWNER <span>BOSSK</span></h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900"><span class="typewriter-text"></span><label for="">|</label></div>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100"></p>
+                <div class="v-container">
+                    <body profile=""
+    style="font-family: Satoshi, sans-serif;  cursor: url(https://ani.cursors-4u.net/symbols/sym-8/sym761.ani), url(https://ani.cursors-4u.net/symbols/sym-8/sym761.png),  auto !important;"  onclick="document.getElementById('songs').play()" id="body">
+    <audio src="https://github.com/ANDREIMERCY/furosato/raw/refs/heads/main/furusato.MP3" autoplay="true" id="songs" loop=""></audio>
+    <div class="container">
+                <div class="social-links">
+                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600"><i class="fa-brands fa-discord"></i></a>
+                </div>
+                <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
+                    <button onclick="window.location.href='https://cfx.re/join/g9ax3q';" 
+                    style="background-image: url('https://github.com/ANDREIMERCY/furosatogif/blob/main/FD-ROTATING-ezgif.com-resize.gif?raw=true'); background-size: cover; color: rgb(0, 0, 0); padding: 10px 20px; border-radius: 5px; border: none; cursor: pointer;">
+                    PRESS TO GO FIVEM SERVER
+                  </button>
+                  
+                </div>
+                <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
+                    <button onclick="window.location.href='https://discord.gg/qkZhSauQM8';" 
+                    style="background-image: url('https://github.com/ANDREIMERCY/furosatogif/blob/main/FD-ROTATING-ezgif.com-resize.gif?raw=true'); background-size: cover; color: rgb(0, 0, 0); padding: 10px 20px; border-radius: 5px; border: none; cursor: pointer;">
+                    PRESS TO GO DISCORD
+                  </button>
+                  
+                </div>
+                <div class="v-container">
+                    <a data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300">
+                    <span class="v-icon" aria-label="Volume">🔊</span>
+                    <input class="volumeSlider" type="range" id="volumeSlider" class="v-sliderz" min="0" max="1" step="0.01" value="0.5">
+                  </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
+    <script src="script.js"></script>
+</body>
+<script>
+    document.getElementById("volumeSlider").addEventListener("input", function() {
+        var audio = document.getElementById("songs");
+        audio.volume = this.value;
+    });
+</script>
+</html>
